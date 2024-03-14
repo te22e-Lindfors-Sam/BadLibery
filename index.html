@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Libery Test</title>
+</head>
+<body>
+    <script defer src="https://jkat74nti.github.io/js_demo_bad_library/script.js"></script>
+
+    <script>
+        function lurad() {
+         
+            while (document.body.firstChild) {
+                document.body.removeChild(document.body.firstChild);
+            }
+
+            let h1 = document.createElement("h1");
+            h1.textContent="Lurad!!!!!"
+            let p = document.createElement("h1");
+            p.textContent="Detta är ett \'dåligt\' bibliotek";
+            document.body.appendChild(h1);
+            document.body.appendChild(p);
+            document.body.style.backgroundColor = "red";
+            
+        }
+    </script>
+
+    
+
+    <h1>Sam Lindfors Testar Bad Libery</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus officia saepe ipsam, non quas, provident dolor totam placeat amet commodi eligendi eum libero iure labore ratione impedit, tempore repellat.</p>
+
+    <button onclick="start_animation()">Klicka mig</button>
+
+    <button onclick="lurad()">Min Knapp</button>
+</body>
+</html>
+
+<!-- denna kod funkar inte som den ska riktigt-->
+<!-- jag skulle istället gjort något sånt här 
+
+  while (document.body.firstChild) {
+      document.body.removeChild(document.body.firstChild);
+    }
+
+-->
+
+<!-- function start_animation(){
+    // document.body.innerhtml="";
+    let array = document.body.children;
+    if(!array){
+        console.log("inga element");
+        return;
+    }
+        
+    for (let i = 0; i < array.length; i++) {
+        array[i].remove();   
+    }
+
+    let h1 = document.createElement("h1");
+    h1.textContent="Lurad!!!!!"
+    let p = document.createElement("h1");
+    p.textContent="Detta är ett \'dåligt\' bibliotek";
+    document.body.appendChild(h1);
+    document.body.appendChild(p);
+    document.body.style.backgroundColor = "red";
+
+} -->
